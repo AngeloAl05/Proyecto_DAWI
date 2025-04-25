@@ -17,6 +17,6 @@ public class Genero {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_genero;
     private String nom_genero;
-    @ManyToMany(mappedBy = "generos")
-    private Set<Juego> juegos = new HashSet<>();
+    @OneToMany(mappedBy = "genero", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<JuegoGenero> juegos = new HashSet<>();
 }

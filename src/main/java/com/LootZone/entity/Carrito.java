@@ -20,6 +20,6 @@ public class Carrito {
     @ManyToOne
     @JoinColumn(name = "id_usuario")
     private Usuario usuario;
-    @OneToMany(mappedBy = "Carrito", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "carrito", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<CarritoDescripcion> carritoDescripcion = new HashSet<>();
 }

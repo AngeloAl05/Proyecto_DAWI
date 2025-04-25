@@ -21,7 +21,7 @@ public class Usuario {
     private String imagePerfil;
     private String firstName;
     private String lastName;
-    @OneToOne(mappedBy = "usuario", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL, orphanRemoval = true)
     private Carrito carrito;
     @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Factura> facturas = new HashSet<>();
