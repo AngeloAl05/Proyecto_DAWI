@@ -30,9 +30,11 @@ public class Juego {
     @ManyToOne
     @JoinColumn(name = "id_desarrollador")
     private Desarrollador desarrollador;
-    @OneToMany(mappedBy = "juego", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<JuegoGenero> generos = new HashSet<>();
-    @OneToMany(mappedBy = "juego", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<CarritoDescripcion> carritoDescripcion = new HashSet<>();
-
+    @ManyToMany
+    @JoinTable(
+            name = "juego_generos",
+            joinColumns = @JoinColumn(name = "id_juego"),
+            inverseJoinColumns = @JoinColumn(name = "id_genero")
+    )
+    private Set<Genero> generos;
 }

@@ -1,6 +1,6 @@
 package com.LootZone.dto.juego;
 
-import com.LootZone.entity.CarritoDescripcion;
+
 import com.LootZone.entity.Desarrollador;
 import com.LootZone.entity.Genero;
 import lombok.Builder;
