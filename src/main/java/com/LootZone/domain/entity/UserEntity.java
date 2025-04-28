@@ -34,8 +34,12 @@ public class UserEntity {
             inverseJoinColumns = @JoinColumn(name = "role_name")
     )
     private Set<RoleEntity> roles;
-    @OneToMany(mappedBy = "users", cascade = CascadeType.ALL, orphanRemoval = true)
+    /*
+    * @OneToMany(mappedBy = "users", cascade = CascadeType.ALL, orphanRemoval = true)
     private Carrito carrito;
-    @OneToMany(mappedBy = "users", cascade = CascadeType.ALL, orphanRemoval = true)
+    * */
+    @OneToOne(mappedBy = "usuario", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Carrito carrito;
+    @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Factura> facturas = new HashSet<>();
 }
