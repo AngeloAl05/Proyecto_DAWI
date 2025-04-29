@@ -26,4 +26,7 @@ public class FacturaMapper {
                 .usuario(usuario)
                 .build();
     }
+
+    public Factura toEntity(FacturaRequestDTO requestDTO) {
+    }
 }
