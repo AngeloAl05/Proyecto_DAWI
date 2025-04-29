@@ -4,6 +4,7 @@ import lombok.Builder;
 import lombok.Data;
 
 import java.time.LocalDate;
+import java.util.Set;
 
 @Data
 @Builder
@@ -18,4 +19,5 @@ public class JuegoRequestDTO {
     private int calificaion;
     private double precio;
     private Long desarrollador;
+    private Set<Long> generos;
 }
