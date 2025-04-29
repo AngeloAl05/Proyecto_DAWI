@@ -1,5 +1,6 @@
 package com.LootZone.domain.mapper;
 
+import com.LootZone.aplication.dto.factura.FacturaRequestDTO;
 import com.LootZone.aplication.dto.factura.FacturaResponseDTO;
 import com.LootZone.domain.entity.Carrito;
 import com.LootZone.domain.entity.Factura;
@@ -24,5 +25,8 @@ public class FacturaMapper {
                 .carrito(carrito)
                 .usuario(usuario)
                 .build();
+    }
+
+    public Factura toEntity(FacturaRequestDTO requestDTO) {
     }
 }
