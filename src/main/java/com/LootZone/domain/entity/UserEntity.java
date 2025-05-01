@@ -38,8 +38,8 @@ public class UserEntity {
     * @OneToMany(mappedBy = "users", cascade = CascadeType.ALL, orphanRemoval = true)
     private Carrito carrito;
     * */
-    @OneToOne(mappedBy = "usuario", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Carrito carrito;
+    @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<Carrito> carritos = new HashSet<>();
     @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Factura> facturas = new HashSet<>();
 }

@@ -33,5 +33,4 @@ public class JuegoController {
     public JuegoResponseDTO editarJuego(@PathVariable Long id, @RequestBody JuegoRequestDTO requestDTO){
         return service.editarJuego(id,requestDTO);
     }
-
 }

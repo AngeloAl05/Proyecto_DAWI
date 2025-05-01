@@ -1,5 +1,6 @@
 package com.LootZone.web.controller;
 
+import com.LootZone.aplication.dto.genero.GeneroJuegosResponseDTO;
 import com.LootZone.aplication.dto.genero.GeneroRequestDTO;
 import com.LootZone.aplication.dto.genero.GeneroResponseDTO;
 import com.LootZone.aplication.dto.usuario.UsuarioRequestDTO;
@@ -28,7 +29,7 @@ public class GeneroController {
     }
 
     @GetMapping("/{id}")
-    public GeneroResponseDTO buscarXId(@PathVariable Long id){
+    public GeneroJuegosResponseDTO buscarXId(@PathVariable Long id){
         return service.buscarXID(id);
     }
 }

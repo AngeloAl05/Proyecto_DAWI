@@ -43,7 +43,7 @@ public class FacturaServiceImpl implements FacturaService {
         List<FacturaResponseDTO> facturasEncontradas = new ArrayList<FacturaResponseDTO>();
         List<FacturaResponseDTO> facturas = listar();
         for (FacturaResponseDTO f:facturas){
-            if (f.getUsuario().getId().equals(id)){
+            if (f.getUsuario().getId_usuario().equals(id)){
                 facturasEncontradas.add(f);
             }
         }

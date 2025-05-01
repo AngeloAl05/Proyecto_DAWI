@@ -3,8 +3,10 @@ package com.LootZone.aplication.service.impl;
 import com.LootZone.aplication.dto.usuario.UsuarioRequestDTO;
 import com.LootZone.aplication.dto.usuario.UsuarioResponseDTO;
 import com.LootZone.aplication.service.UsuarioService;
+import com.LootZone.domain.entity.Carrito;
 import com.LootZone.domain.entity.UserEntity;
 import com.LootZone.domain.mapper.UsuarioMapper;
+import com.LootZone.domain.repository.CarritoRepository;
 import com.LootZone.domain.repository.IUserRepository;
 import com.LootZone.security.util.JwtUtil;
 import lombok.RequiredArgsConstructor;
@@ -20,6 +22,7 @@ public class UsuarioSeviceImpl implements UsuarioService {
     private final UsuarioMapper usuarioMapper;
     private final IUserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
+    private final CarritoRepository carritoRepository;
 
     @Override
     public List<UsuarioResponseDTO> listar() {
@@ -34,6 +37,10 @@ public class UsuarioSeviceImpl implements UsuarioService {
         usuario.setPassword(encryptedPassword);
 
         UserEntity nuevoUsuario = userRepository.save(usuario);
+
+        Carrito carrito = new Carrito();
+        carrito.setUsuario(nuevoUsuario);
+        carritoRepository.save(carrito);
 
         UsuarioResponseDTO responseDTO = usuarioMapper.toDTO(nuevoUsuario);
 

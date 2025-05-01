@@ -13,9 +13,11 @@ import java.util.stream.Collectors;
 @Component
 public class JuegoMapper {
     private final GeneroMapper generoMapper;
+    private final DesarrolladorMapper desarrolladorMapper;
 
-    public JuegoMapper(GeneroMapper generoMapper) {
+    public JuegoMapper(GeneroMapper generoMapper, DesarrolladorMapper desarrolladorMapper) {
         this.generoMapper = generoMapper;
+        this.desarrolladorMapper = desarrolladorMapper;
     }
 
     public JuegoResponseDTO toDTO(Juego juego){
@@ -30,7 +32,7 @@ public class JuegoMapper {
                 .num_ventas(juego.getNum_ventas())
                 .calificaion(juego.getCalificaion())
                 .precio(juego.getPrecio())
-                .desarrollador(juego.getDesarrollador())
+                .desarrollador(desarrolladorMapper.toDTO(juego.getDesarrollador()))
                 .generos(juego.getGeneros().stream().map(generoMapper::toDTO).collect(Collectors.toSet()))
                 .build();
     }

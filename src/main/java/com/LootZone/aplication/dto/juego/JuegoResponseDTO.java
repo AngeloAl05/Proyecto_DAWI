@@ -1,6 +1,7 @@
 package com.LootZone.aplication.dto.juego;
 
 
+import com.LootZone.aplication.dto.desarrollador.DesarrolladorResponseDTO;
 import com.LootZone.aplication.dto.genero.GeneroResponseDTO;
 import com.LootZone.domain.entity.Desarrollador;
 import lombok.Builder;
@@ -22,6 +23,6 @@ public class JuegoResponseDTO {
     private int num_ventas;
     private int calificaion;
     private double precio;
-    private Desarrollador desarrollador;
+    private DesarrolladorResponseDTO desarrollador;
     private Set<GeneroResponseDTO> generos;
 }

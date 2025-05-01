@@ -20,8 +20,8 @@ public class Carrito {
     @JoinColumn(name = "id_usuario")
     private UserEntity usuario;
     **/
-    @OneToOne
-    @JoinColumn(name = "id_usuario")
+    @ManyToOne
+    @JoinColumn(name = "id_usuario", nullable = false)
     private UserEntity usuario;
     @OneToOne(mappedBy = "carrito", cascade = CascadeType.ALL)
     private Factura factura;

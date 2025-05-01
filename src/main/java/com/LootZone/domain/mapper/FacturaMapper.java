@@ -9,13 +9,21 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class FacturaMapper {
+    private final CarritoMapper carritoMapper;
+    private final UsuarioMapper usuarioMapper;
+
+    public FacturaMapper(CarritoMapper carritoMapper, UsuarioMapper usuarioMapper) {
+        this.carritoMapper = carritoMapper;
+        this.usuarioMapper = usuarioMapper;
+    }
+
     public FacturaResponseDTO toDTO(Factura factura){
         return FacturaResponseDTO.builder()
                 .id_factura(factura.getId_factura())
                 .fecha(factura.getFecha())
                 .total(factura.getTotal())
-                .carrito(factura.getCarrito())
-                .usuario(factura.getUsuario())
+                .carrito(carritoMapper.toDTO(factura.getCarrito()))
+                .usuario(usuarioMapper.toDTO(factura.getUsuario()))
                 .build();
     }
     public Factura toEntity(FacturaRequestDTO dto, Carrito carrito, UserEntity usuario){

@@ -77,7 +77,7 @@ public class CarritoServiceImpl implements CarritoService {
         CarritoResponseDTO carritoEncontrado = null;
         List<CarritoResponseDTO> carritos = listar();
         for (CarritoResponseDTO c:carritos){
-            if (c.getUsuario().getId().equals(id)){
+            if (c.getUsuario().getId_usuario().equals(id)){
                 carritoEncontrado = c;
             }
         }
