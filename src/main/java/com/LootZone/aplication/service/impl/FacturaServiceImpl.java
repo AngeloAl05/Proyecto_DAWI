@@ -14,7 +14,9 @@ import com.LootZone.domain.repository.IUserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -38,10 +40,14 @@ public class FacturaServiceImpl implements FacturaService {
 
     @Override
     public List<FacturaResponseDTO> buscarXUsuario(Long id) {
-    /*FALTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
-
-        return null;
-
+        List<FacturaResponseDTO> facturasEncontradas = new ArrayList<FacturaResponseDTO>();
+        List<FacturaResponseDTO> facturas = listar();
+        for (FacturaResponseDTO f:facturas){
+            if (f.getUsuario().getId().equals(id)){
+                facturasEncontradas.add(f);
+            }
+        }
+        return facturasEncontradas;
     }
 
     @Override

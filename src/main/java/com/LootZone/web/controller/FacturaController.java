@@ -3,8 +3,7 @@ package com.LootZone.web.controller;
 import com.LootZone.aplication.dto.factura.FacturaRequestDTO;
 import com.LootZone.aplication.dto.factura.FacturaResponseDTO;
 import com.LootZone.aplication.service.impl.FacturaServiceImpl;
-import com.LootZone.aplication.service.FacturaService;
-import com.LootZone.aplication.service.impl.FacturaServiceImpl;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -30,6 +29,11 @@ public class FacturaController {
     @GetMapping("/{id}")
     public FacturaResponseDTO buscarXID(@PathVariable Long id){
         return service.buscarXID(id);
+    }
+
+    @GetMapping("/xUsuario/{id}")
+    public List<FacturaResponseDTO> buscarXUsuarioID(@PathVariable Long id){
+        return service.buscarXUsuario(id);
     }
 }
 
