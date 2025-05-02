@@ -1,5 +1,6 @@
 package com.LootZone.web.controller;
 
+import com.LootZone.aplication.dto.desarrollador.DesarrolladorJuegoResponseDTO;
 import com.LootZone.aplication.dto.desarrollador.DesarrolladorRequestDTO;
 import com.LootZone.aplication.dto.desarrollador.DesarrolladorResponseDTO;
 import com.LootZone.aplication.service.impl.DesarrolladorServiceImpl;
@@ -26,7 +27,7 @@ public class DesarrolladorController {
     }
 
     @GetMapping("/{id}")
-    public DesarrolladorResponseDTO buscarXID(@PathVariable Long id){
+    public DesarrolladorJuegoResponseDTO buscarXID(@PathVariable Long id){
         return service.buscarXID(id);
     }
 

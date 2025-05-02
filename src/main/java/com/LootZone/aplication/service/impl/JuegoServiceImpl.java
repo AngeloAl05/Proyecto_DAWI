@@ -69,6 +69,4 @@ public class JuegoServiceImpl implements JuegoService {
         return juegoMapper.toDTO(juegoExistente);
     }
 
-
-
 }
