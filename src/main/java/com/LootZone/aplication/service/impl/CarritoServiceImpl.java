@@ -38,16 +38,14 @@ public class CarritoServiceImpl implements CarritoService {
         return carritoRepository.findById(id).map(carritoMapper::toDTO).orElseThrow(()->new RuntimeException("No se encontro el carrito"));
     }
 
-
-
-    @Override
-    public CarritoResponseDTO editarCarritoJuegos(Long id, CarritoJuegosRequestDTO dto) {
-        Carrito carrito = carritoRepository.findById(id).orElseThrow(() -> new RuntimeException("Carrito no encontrado"));
+    public CarritoResponseDTO editarCarritoJuegos(UserEntity usuario, CarritoJuegosRequestDTO dto) {
+        Carrito carrito = carritoRepository.findByUsuarioAndActivoTrue(usuario)
+                .orElseThrow(() -> new RuntimeException("Carrito no encontrado"));
 
         if (dto.getJuegosAgregar() != null && !dto.getJuegosAgregar().isEmpty()) {
             Set<Juego> juegosParaAgregar = new HashSet<>(juegoRepository.findAllById(dto.getJuegosAgregar()));
             if (juegosParaAgregar.size() != dto.getJuegosAgregar().size()) {
-                throw new RuntimeException("Uno o más géneros a agregar no existen");
+                throw new RuntimeException("Uno o más juegos a agregar no existen");
             }
             carrito.getJuegos().addAll(juegosParaAgregar);
         }
@@ -55,7 +53,7 @@ public class CarritoServiceImpl implements CarritoService {
         if (dto.getJuegosEliminar() != null && !dto.getJuegosEliminar().isEmpty()) {
             Set<Juego> juegosParaEliminar = new HashSet<>(juegoRepository.findAllById(dto.getJuegosEliminar()));
             if (juegosParaEliminar.size() != dto.getJuegosEliminar().size()) {
-                throw new RuntimeException("Uno o más géneros a eliminar no existen");
+                throw new RuntimeException("Uno o más juegos a eliminar no existen");
             }
             carrito.getJuegos().removeAll(juegosParaEliminar);
         }
@@ -73,15 +71,10 @@ public class CarritoServiceImpl implements CarritoService {
     }
 
     @Override
-    public CarritoResponseDTO buscarXUsuario(Long id) {
-        CarritoResponseDTO carritoEncontrado = null;
-        List<CarritoResponseDTO> carritos = listar();
-        for (CarritoResponseDTO c:carritos){
-            if (c.getUsuario().getId_usuario().equals(id)){
-                carritoEncontrado = c;
-            }
-        }
-        return carritoEncontrado;
+    public CarritoResponseDTO buscarXUsuario(UserEntity  usuario) {
+        Carrito carrito = carritoRepository.findByUsuarioAndActivoTrue(usuario)
+                .orElseThrow(() -> new RuntimeException("Carrito no encontrado"));
+        return carritoMapper.toDTO(carrito);
     }
 
 

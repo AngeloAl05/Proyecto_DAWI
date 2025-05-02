@@ -15,6 +15,8 @@ public class Carrito {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_carrito;
+    @Column(nullable = false)
+    private boolean activo;
     /*
     @ManyToOne
     @JoinColumn(name = "id_usuario")

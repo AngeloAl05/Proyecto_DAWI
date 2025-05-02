@@ -40,6 +40,7 @@ public class UsuarioSeviceImpl implements UsuarioService {
 
         Carrito carrito = new Carrito();
         carrito.setUsuario(nuevoUsuario);
+        carrito.setActivo(true);
         carritoRepository.save(carrito);
 
         UsuarioResponseDTO responseDTO = usuarioMapper.toDTO(nuevoUsuario);
