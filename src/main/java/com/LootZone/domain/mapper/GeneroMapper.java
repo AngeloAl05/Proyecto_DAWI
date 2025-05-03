@@ -19,17 +19,20 @@ public class GeneroMapper {
         return GeneroResponseDTO.builder()
                 .id_genero(genero.getId_genero())
                 .nom_genero(genero.getNom_genero())
+                .imagen(genero.getImagen())
                 .build();
     }
     public Genero toEntity(GeneroRequestDTO dto){
         return Genero.builder()
                 .nom_genero(dto.getNom_genero())
+                .imagen(dto.getImagen())
                 .build();
     }
     public GeneroJuegosResponseDTO toGeneroJuegosDto(List<JuegoResponseDTO> juegoResponseDTOS, Genero genero){
         return GeneroJuegosResponseDTO.builder()
                 .id_genero(genero.getId_genero())
                 .nom_genero(genero.getNom_genero())
+                .imagen(genero.getImagen())
                 .juegos(new HashSet<>(juegoResponseDTOS))
                 .build();
     }

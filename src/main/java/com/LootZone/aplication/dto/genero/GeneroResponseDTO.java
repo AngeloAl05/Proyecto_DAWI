@@ -7,5 +7,6 @@ import lombok.Data;
 @Builder
 public class GeneroResponseDTO {
     private Long id_genero;
+    private String imagen;
     private String nom_genero;
 }

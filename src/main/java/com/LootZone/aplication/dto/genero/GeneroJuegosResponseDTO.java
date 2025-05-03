@@ -11,5 +11,6 @@ import java.util.Set;
 public class GeneroJuegosResponseDTO {
     private Long id_genero;
     private String nom_genero;
+    private String imagen;
     private Set<JuegoResponseDTO> juegos;
 }

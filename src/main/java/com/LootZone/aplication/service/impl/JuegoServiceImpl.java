@@ -47,6 +47,7 @@ public class JuegoServiceImpl implements JuegoService {
         return juegoMapper.toDTO(nuevoJuego);
     }
 
+    @Override
     public JuegoResponseDTO editarJuego(Long id_juego, JuegoRequestDTO dto) {
         Juego juegoExistente = juegoRepository.findById(id_juego).orElseThrow(() -> new RuntimeException("Juego no encontrado"));
         Desarrollador desarrollador = desarrolladorRepository.findById(dto.getDesarrollador()).orElseThrow(() -> new RuntimeException("Desarrollador no encontrado"));

@@ -7,4 +7,5 @@ import lombok.Data;
 @Builder
 public class GeneroRequestDTO {
     private String nom_genero;
+    private String imagen;
 }

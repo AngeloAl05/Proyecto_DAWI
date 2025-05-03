@@ -16,6 +16,6 @@ public class Genero {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_genero;
+    private String imagen;
     private String nom_genero;
-
 }
