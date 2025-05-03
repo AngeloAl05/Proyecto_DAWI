@@ -16,5 +16,4 @@ public class FacturaResponseDTO {
     private LocalDate fecha;
     private double total;
     private CarritoResponseDTO carrito;
-    private UsuarioResponseDTO usuario;
 }

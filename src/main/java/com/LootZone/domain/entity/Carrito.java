@@ -17,11 +17,6 @@ public class Carrito {
     private Long id_carrito;
     @Column(nullable = false)
     private boolean activo;
-    /*
-    @ManyToOne
-    @JoinColumn(name = "id_usuario")
-    private UserEntity usuario;
-    **/
     @ManyToOne
     @JoinColumn(name = "id_usuario", nullable = false)
     private UserEntity usuario;

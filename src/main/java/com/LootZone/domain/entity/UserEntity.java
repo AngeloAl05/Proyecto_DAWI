@@ -34,10 +34,7 @@ public class UserEntity {
             inverseJoinColumns = @JoinColumn(name = "role_name")
     )
     private Set<RoleEntity> roles;
-    /*
-    * @OneToMany(mappedBy = "users", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Carrito carrito;
-    * */
+
     @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Carrito> carritos = new HashSet<>();
     @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL, orphanRemoval = true)

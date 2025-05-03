@@ -10,11 +10,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class FacturaMapper {
     private final CarritoMapper carritoMapper;
-    private final UsuarioMapper usuarioMapper;
 
-    public FacturaMapper(CarritoMapper carritoMapper, UsuarioMapper usuarioMapper) {
+    public FacturaMapper(CarritoMapper carritoMapper) {
         this.carritoMapper = carritoMapper;
-        this.usuarioMapper = usuarioMapper;
     }
 
     public FacturaResponseDTO toDTO(Factura factura){
@@ -23,7 +21,6 @@ public class FacturaMapper {
                 .fecha(factura.getFecha())
                 .total(factura.getTotal())
                 .carrito(carritoMapper.toDTO(factura.getCarrito()))
-                .usuario(usuarioMapper.toDTO(factura.getUsuario()))
                 .build();
     }
     public Factura toEntity(FacturaRequestDTO dto, Carrito carrito, UserEntity usuario){

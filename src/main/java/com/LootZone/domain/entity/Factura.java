@@ -19,7 +19,7 @@ public class Factura {
     private LocalDate fecha;
     private double total;
     @OneToOne
-    @JoinColumn(name = "id_carrito", nullable = false, unique = true)
+    @JoinColumn(name = "id_carrito", nullable = false )
     private Carrito carrito;
     @ManyToOne
     @JoinColumn(name = "id_usuario")

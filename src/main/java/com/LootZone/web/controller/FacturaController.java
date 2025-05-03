@@ -5,6 +5,7 @@ import com.LootZone.aplication.dto.factura.FacturaResponseDTO;
 import com.LootZone.aplication.service.impl.FacturaServiceImpl;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,13 +18,16 @@ public class FacturaController {
 
 
     @GetMapping
-    public List<FacturaResponseDTO> listar(){
-        return service.listar();
+    public List<FacturaResponseDTO> listar(Authentication authentication) {
+        String username = authentication.getName();
+        return service.listar(username);
     }
 
     @PostMapping
-    public FacturaResponseDTO crear(@RequestBody FacturaRequestDTO requestDTO){
-        return service.crear(requestDTO);
+    public FacturaResponseDTO crear(Authentication authentication,
+                                    @RequestBody FacturaRequestDTO requestDTO) {
+        String username = authentication.getName();
+        return service.crear(username, requestDTO);
     }
 
     @GetMapping("/{id}")
@@ -31,9 +35,5 @@ public class FacturaController {
         return service.buscarXID(id);
     }
 
-    @GetMapping("/xUsuario/{id}")
-    public List<FacturaResponseDTO> buscarXUsuarioID(@PathVariable Long id){
-        return service.buscarXUsuario(id);
-    }
 }
 

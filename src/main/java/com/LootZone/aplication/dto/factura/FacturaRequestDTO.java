@@ -10,6 +10,4 @@ import java.time.LocalDate;
 public class FacturaRequestDTO {
     private LocalDate fecha;
     private double total;
-    private Long carrito;
-    private Long usuario;
 }

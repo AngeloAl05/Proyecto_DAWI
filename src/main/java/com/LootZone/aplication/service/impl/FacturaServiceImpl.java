@@ -11,10 +11,12 @@ import com.LootZone.domain.mapper.FacturaMapper;
 import com.LootZone.domain.repository.CarritoRepository;
 import com.LootZone.domain.repository.FacturaRepository;
 import com.LootZone.domain.repository.IUserRepository;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
 
@@ -29,8 +31,13 @@ public class FacturaServiceImpl implements FacturaService {
 
 
     @Override
-    public List<FacturaResponseDTO> listar(){
-        return facturaRepository.findAll().stream().map(facturaMapper::toDTO).toList();
+    public List<FacturaResponseDTO> listar(String username) {
+        UserEntity usuario = userRepository.findByUsername(username)
+                .orElseThrow(() -> new RuntimeException("No se encontró el usuario"));
+
+        return facturaRepository.findByUsuario(usuario).stream()
+                .map(facturaMapper::toDTO)
+                .toList();
     }
 
     public FacturaResponseDTO buscarXID(Long id){
@@ -38,25 +45,30 @@ public class FacturaServiceImpl implements FacturaService {
 
     }
 
-    @Override
-    public List<FacturaResponseDTO> buscarXUsuario(Long id) {
-        List<FacturaResponseDTO> facturasEncontradas = new ArrayList<FacturaResponseDTO>();
-        List<FacturaResponseDTO> facturas = listar();
-        for (FacturaResponseDTO f:facturas){
-            if (f.getUsuario().getId_usuario().equals(id)){
-                facturasEncontradas.add(f);
-            }
-        }
-        return facturasEncontradas;
-    }
 
     @Override
-    public FacturaResponseDTO crear(FacturaRequestDTO dto) {
-        Carrito carrito = carritoRepository.findById(dto.getCarrito()).orElseThrow(()-> new RuntimeException("No se encontro el carrito"));
-        UserEntity usuario = userRepository.findById(dto.getUsuario()).orElseThrow(()-> new RuntimeException("No se encontro el usuario"));
+    @Transactional
+    public FacturaResponseDTO crear(String username, FacturaRequestDTO dto) {
+        UserEntity usuario = userRepository.findByUsername(username)
+                .orElseThrow(() -> new RuntimeException("No se encontró el usuario"));
 
-        Factura factura = facturaMapper.toEntity(dto,carrito,usuario);
+        Carrito carrito = carritoRepository.findByUsuarioAndActivoTrue(usuario)
+                .orElseThrow(() -> new RuntimeException("No se encontró el carrito activo del usuario"));
+        carrito.setActivo(false);
+        carrito.setFactura(null);
+        carritoRepository.save(carrito);
+
+
+        Factura factura = facturaMapper.toEntity(dto, carrito, usuario);
         Factura nuevaFactura = facturaRepository.save(factura);
+
+        Carrito nuevoCarrito = Carrito.builder()
+                .activo(true)
+                .usuario(usuario)
+                .juegos(new HashSet<>())
+                .build();
+        carritoRepository.save(nuevoCarrito);
+
         return facturaMapper.toDTO(nuevaFactura);
     }
 }
