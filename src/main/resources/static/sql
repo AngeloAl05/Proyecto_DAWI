@@ -1,0 +1,81 @@
+create database lootzone;
+use lootzone;
+
+select * from juego;
+select * from genero;
+select * from juego_generos;
+
+INSERT INTO desarrollador (descripcion, imagen, nom_desarrollador) VALUES
+('SIE Santa Monica Studio es un desarrollador de videojuegos con sede en Los Ángeles. Conocido por la saga God of War y parte de Sony Interactive Entertainment.', 'https://images.everyeye.it/img-notizie/santa-monica-studio-lavorando-ip-arriva-un-ulteriore-conferma-v3-733969-1200x1200.webp', 'Santa Monica Studio'),
+('Naughty Dog es un estudio estadounidense fundado en 1984. Ha creado franquicias como Crash Bandicoot, Jak and Daxter, Uncharted y The Last of Us.', 'https://gagadget.es/media/post_big/Naughty_Dog.jpg', 'Naughty Dog'),
+('Insomniac Games es una desarrolladora fundada en 1994 en Burbank, EE.UU. Ha sido premiada por su excelencia y su presidente es Ted Price.', 'https://cdn.wccftech.com/wp-content/uploads/2019/08/insomniac_games_logo.jpg', 'Insomniac Games'),
+('Capcom Co., Ltd. es una empresa de videojuegos japonesa creadora de franquicias aclamadas y con ventas millonarias a nivel mundial.', 'https://play-lh.googleusercontent.com/BoCosLFPSz1RKPCiE6qGvB0NsKOOD-R-OGz4gLvog--ozHEEhObHFBNZTxyR6ucWb4Y', 'Capcom'),
+('FromSoftware, Inc. es una compañía japonesa conocida por las series Armored Core, Dark Souls, Bloodborne, Sekiro y Elden Ring.', 'https://wholesgame.com/wp-content/uploads/FromSoftware-Logo-Dark-Thumb-Square.png', 'FromSoftware'),
+('Rockstar Games es una compañía desarrolladora adquirida por Take-Two. Conocida por GTA, Max Payne, Midnight Club y Red Dead Redemption.', 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Rockstar_Games_Logo.svg/1200px-Rockstar_Games_Logo.svg.png', 'Rockstar Games'),
+('Electronic Arts es una desarrolladora y distribuidora de videojuegos fundada en 1982. Tiene sede en Redwood City, California.', 'https://media.contentapi.ea.com/content/dam/eacom/careers/common/ea-careers-featured-image.jpg.adapt.crop191x100.1200w.jpg', 'Electronic Arts'),
+('Square Enix es una compañía japonesa conocida por sus franquicias RPG como Final Fantasy, Dragon Quest y Kingdom Hearts.', 'https://play-lh.googleusercontent.com/eS496-RroU7sJwkojrcqCQoz8OuZb3E_qZRz8YttwQPdaJNaHld3D2ekxKPZHgrTuA', 'Square Enix'),
+('Bandai Namco Entertainment es una empresa japonesa de desarrollo y publicación de videojuegos, videos, música y productos relacionados.', 'https://yt3.googleusercontent.com/FBbHLTHbVjPWGGFH9tDdPjLPYSfQ1gx8PNsd9aA-FruKRKOXi7nlvxccYZJmXWZCUio1GE4iZSE=s900-c-k-c0x00ffffff-no-rj', 'Bandai Namco Entertainment'),
+('Sega Corporation es una multinacional japonesa con sedes en Shinagawa, Irvine y Londres. Desarrolla y distribuye videojuegos mundialmente.', 'https://yt3.googleusercontent.com/L8W9Z-28ocqFUaCwttYHD6sbTV0oiko95h_onmV8liuNXT_o8fXKc3aQ1bNl9s4Bw2pVj1G0=s900-c-k-c0x00ffffff-no-rj', 'Sega');
+
+insert into genero (nom_genero, imagen) values
+('Acción','https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/11/mejores-juegos-accion-2022-2872703.jpg?tf=1200x'),
+('Aventura','https://www.hd-tecnologia.com/imagenes/articulos/2022/04/Top-10-de-los-mejores-juegos-de-aventura.jpg'),
+('Rol (RPG','https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/11/mejores-juegos-rol-rpg-2022-2875855.jpg?tf=1200x'),
+('Estrategía','https://i.blogs.es/3f15c2/valorant/1366_2000.jpg'),
+('Simulación','https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/12/mejores-juegos-simulacion-2023-3251701.jpg?tf=1200x'),
+('Deportes','https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/11/mejores-juegos-deportivos-2022-2877025.jpg?tf=1200x'),
+('Carreras','https://e4z6bdbogrg.exactdn.com/wp-content/uploads/2020/08/portada-carreras-1024x576.jpg?strip=all&lossy=1&ssl=1'),
+('Terror','https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2024/10/juegos-terror-imprescindibles-ayer-hoy-deberias-jugar-halloween-cualquier-momento-ano-4251284.jpg?tf=1200x'),
+('Plataformas','https://img.asmedia.epimg.net/resizer/v2/LYTNEKVPQJKVRED4JNOH6KBA2U.jpg?auth=7eaa2b3d5ed1bbf67bb7d6ea1e8bd1ee9d9833f97c3ae2772a10ef8e3c2e44e4&width=976&height=549&smart=true');
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer, id_desarrollador) VALUES
+(94, 'Kratos, un guerrero espartano, desata el poder de los dioses en busca de venganza contra Ares, enfrentándose a criaturas mitológicas y resolviendo acertijos.', '2015-10-23', 'https://i.ytimg.com/vi/oXjkfhIakG8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBotIfuVDRrHVnRr4fyO6OC4BORbg', 13723586, 'https://static.wikia.nocookie.net/wiki-doblaje-espana/images/7/7c/GOW_portada.png/revision/latest?cb=20240619213406&path-prefix=es', 49.99, 'God of War', 'jZkX3LJDeYQ', 1),
+
+(93, 'Kratos, nuevo dios de la guerra, es traicionado por Zeus. Con ayuda de Gaia, busca recuperar su poder y cambiar su destino enfrentando a los dioses del Olimpo.', '2019-12-23', 'https://i.ytimg.com/vi/gX-V-ICuQGU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDpLnxA7qsiV-bUK9w0_cRKWVNq0w', 14905823, 'https://static.wikia.nocookie.net/godofwar/images/e/ef/Portada_God_of_War_II.png/revision/latest?cb=20211007232506&path-prefix=es', 29.99, 'God of War II', 'oe0OmX9hINA', 1),
+
+(92, 'Kratos busca vengarse de Zeus y los dioses. Desde el Hades hasta el Monte Olimpo, lucha contra titanes y monstruos con un arsenal mejorado.', '2012-11-01', 'https://m.media-amazon.com/images/I/81LCkp8hf4L._SL1500_.jpg', 20184934, 'https://static.wikia.nocookie.net/godofwar/images/d/d8/Portada_God_of_War_III.png/revision/latest?cb=20211007233947&path-prefix=es', 39.99, 'God of War III', 'bPi7ORsTp-I', 1),
+
+(80, 'Kratos rompe su juramento con Ares y es castigado por las Furias. Encarcelado y torturado, lucha por redimirse y vengar a su familia.', '2010-07-21', 'https://assetsio.gnwcdn.com/136273370527.jpg?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp', 6129208, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkaIX3ZWrZelRQLQnyXMQmSaG3oIWNKkDblw&s', 39.99, 'God of War: Ascension', 'VJMK8oFY1rA', 1),
+
+(95, 'Kratos es padre de nuevo y protege a su hijo Atreus mientras enfrentan peligros en un nuevo mundo. Aprende a controlar su ira y guiar a su hijo.', '2015-10-23', 'https://cdn1.epicgames.com/offer/3ddd6a590da64e3686042d108968a6b2/EGS_GodofWar_SantaMonicaStudio_S2_1200x1600-fbdf3cbc2980749091d52751ffabb7b7_1200x1600-fbdf3cbc2980749091d52751ffabb7b7', 13723586, 'https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2018/07/god-war-ps4.jpg?tf=3840x', 49.99, 'God of War', 'd8HmwZSskvY', 1),
+
+(94, 'Kratos y Atreus deben viajar por los Nueve Reinos para prepararse para la batalla profetizada del Ragnarök mientras buscan respuestas.', '2011-03-05', 'https://static1.srcdn.com/wordpress/wp-content/uploads/2022/10/God-of-War-Ragnarok-Kratos-in-a-cave.jpg', 17162666, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLxSp12QMsXipNoyNk87ZqJatIgQeY8kHXSQ&s', 49.99, 'God of War Ragnarök', 'JE6iXP1BXjo', 1),
+
+(95, '20 años después de una pandemia, Joel debe escoltar a Ellie, una niña de 14 años, a través de EE. UU. en ruinas, enfrentando infectados y humanos desesperados.', '2014-07-30', 'https://s3.us-east-1.amazonaws.com/nd.images/uploads/T1X_PS5_Launch.png', 23755694, 'https://upload.wikimedia.org/wikipedia/en/8/86/The_Last_of_Us_Part_I_cover.jpg', 59.99, 'The Last of Us', '8a3Aga7JJgE', 2),
+
+(92, 'Cinco años después, Ellie busca justicia tras un hecho violento. En su viaje enfrenta peligros y las consecuencias emocionales de sus acciones.', '2020-06-19', 'https://www.masgamers.com/wp-content/uploads/2024/01/the-last-of-us-4-1.jpg', 5278587, 'https://image.api.playstation.com/vulcan/img/rnd/202010/2618/w48z6bzefZPrRcJHc7L8SO66.png', 59.99, 'The Last of Us Part II', 'JdE9U9WW_HM', 2),
+
+(88, 'Nathan Drake sigue una pista sobre El Dorado. En una isla del Pacífico, enfrenta mercenarios y descubre secretos mortales mientras lucha por sobrevivir.', '2006-08-19', 'https://i.ytimg.com/vi/rZnUdJVLP_o/maxresdefault.jpg', 3638962, 'https://static.wikia.nocookie.net/unchartedpedia/images/b/bd/Uncharted_1_portada.jpeg/revision/latest?cb=20211229031812&path-prefix=es', 39.99, 'Uncharted', 'E9dqi2fmnFw', 2),
+(90, 'Sam y Drake buscan el tesoro perdido del capitán Henry Avery, viajando por el mundo desde Madagascar hasta islas, ciudades remotas y picos nevados en una aventura épica.', '2016-05-10', 'https://wallpapers.com/images/hd/uncharted-4-lrc9dstxc47wztbp.jpg', 3242373, 'https://m.media-amazon.com/images/M/MV5BNTFmN2M0MGMtMTI5Ny00NzRlLWFlZGYtZDM0N2VmOTUwYTdmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg', 49.99, 'Uncharted 4', 'Zl4yNjrgtG8', 2),
+
+(84, 'Peter Parker, con ocho años como Spider-Man, domina el combate, las acrobacias y la exploración urbana, enfrentando nuevas amenazas en la versión más poderosa que se ha controlado del héroe.', '2024-12-05', 'https://static.fnac-static.com/multimedia/Images/FR/NR/de/b5/9a/10139102/1520-2/tsp20250321040248/Marvel-s-Spider-Man-PS4.jpg', 14261093, 'https://image.api.playstation.com/vulcan/ap/rnd/202011/0402/C784xeOFo2wViCf4m5bxgoeH.png', 39.99, 'Spider-Man', 'q4GdJVvdxss', 3),
+
+(84, 'Miles Morales sigue los pasos de Peter Parker como el nuevo Spider-Man. Cuando un conflicto amenaza su ciudad, descubre que con gran poder viene una gran responsabilidad y debe adoptar su propio camino.', '2024-07-30', 'https://i.ytimg.com/vi/JsNgEBb4ZD0/maxresdefault.jpg', 5656129, 'https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da845e9124659579fda9eff1bc3e', 59.99, 'Spider-Man: Miles Morales', 'oZXyrAfuHOo', 3),
+
+(98, 'Ratchet y Clank reviven su historia de origen con acción, jefes nuevos y planetas rediseñados. Esta versión modernizada ofrece jugabilidad renovada, nuevas secuencias y visuales espectaculares en PS4.', '2024-08-12', 'https://image.api.playstation.com/vulcan/img/rnd/202011/0204/g7QavKoff0uAngWn4Hiytel9.png', 2397430, 'https://upload.wikimedia.org/wikipedia/en/3/37/Ratchet_and_Clank_cover.jpg', 59.99, 'Ratchet & Clank', 'q5Mjz1RTfkU', 3);
+
+INSERT INTO juego_generos (id_juego, id_genero) VALUES (1, 1), (1, 2);
+
+INSERT INTO juego_generos (id_juego, id_genero) VALUES (2, 1), (2, 2);
+
+INSERT INTO juego_generos (id_juego, id_genero) VALUES (3, 1), (3, 2);
+
+INSERT INTO juego_generos (id_juego, id_genero) VALUES (4, 1), (4, 2);
+
+INSERT INTO juego_generos (id_juego, id_genero) VALUES (5, 1), (5, 2), (5, 3);
+
+INSERT INTO juego_generos (id_juego, id_genero) VALUES (6, 1), (6, 2), (6, 3);
+
+INSERT INTO juego_generos (id_juego, id_genero) VALUES (7, 1), (7, 2), (7, 8);
+
+INSERT INTO juego_generos (id_juego, id_genero) VALUES (8, 1), (8, 2), (8, 8);
+
+INSERT INTO juego_generos (id_juego, id_genero) VALUES (9, 1), (9, 2);
+
+INSERT INTO juego_generos (id_juego, id_genero) VALUES (10, 1), (10, 2);
+
+INSERT INTO juego_generos (id_juego, id_genero) VALUES (11, 1), (11, 2);
+
+INSERT INTO juego_generos (id_juego, id_genero) VALUES (12, 1), (12, 2);
+
+INSERT INTO juego_generos (id_juego, id_genero) VALUES (13, 1), (13, 2);
