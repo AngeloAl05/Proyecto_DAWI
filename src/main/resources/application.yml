@@ -7,7 +7,21 @@ spring:
     username: root
     password: mysql
     driver-class-name: com.mysql.cj.jdbc.Driver
-
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: angeloalv358@gmail.com
+    password: wgta nhtm edxy emxm
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          ssl:
+            trust: smtp.gmail.com
+    main:
+      allow-circular-references: true
   jpa:
     hibernate:
       ddl-auto: update

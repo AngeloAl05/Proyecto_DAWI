@@ -1,0 +1,36 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            color: white;
+            background-color: #4c1d95;
+        }
+        .invoice-box {
+            max-width: 800px;
+            margin: auto;
+            padding: 30px;
+            border: 1px solid #eee;
+            box-shadow: 0 0 10px white;
+        }
+        .invoice-box table {
+            width: 100%;
+            line-height: inherit;
+            text-align: left;
+            border-collapse: collapse;
+        }
+        .invoice-box table td {
+            padding: 8px;
+            vertical-align: top;
+        }
+        .invoice-box table tr.heading td {
+            background: #4c1d95;
+            border-bottom: 1px solid #ddd;
+            font-weight: bold;
+        }
+        .invoice-box table tr.item td {
+            border-bottom: 1px solid ;
+        }
+        .invoice-box table tr.total td {
+            font-weight: bold;
+            border-top: 2px solid #4c1d95;
+        }
+}

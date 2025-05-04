@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Factura</title>
+    <link rel="stylesheet" href="../pdf-resources/css/facturasPdfStyle.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            color: white;
+            background-color: #4c1d95;
+        }
+        .invoice-box {
+            max-width: 800px;
+            margin: auto;
+            padding: 30px;
+            border: 1px solid #eee;
+            box-shadow: 0 0 10px white;
+        }
+        .invoice-box table {
+            width: 100%;
+            line-height: inherit;
+            text-align: left;
+            border-collapse: collapse;
+        }
+        .invoice-box table td {
+            padding: 8px;
+            vertical-align: top;
+        }
+        .invoice-box table tr.heading td {
+            background: #4c1d95;
+            border-bottom: 1px solid #ddd;
+            font-weight: bold;
+        }
+        .invoice-box table tr.item td {
+            border-bottom: 1px solid ;
+        }
+        .invoice-box table tr.total td {
+            font-weight: bold;
+            border-top: 2px solid #4c1d95;
+        }
+    </style>
+</head>
+<body>
+
+<div class="invoice-box">
+    <h2>Factura #<span th:text="${factura.id_factura}"></span></h2>
+    <p><strong>Fecha:</strong> <span th:text="${factura.fecha}"></span></p>
+
+    <table>
+        <tr>
+            <td>
+                <strong>Cliente:</strong><br>
+                    <span th:text="${factura.carrito.usuario.firstName} + ' ' + ${factura.carrito.usuario.lastName}"></span><br>
+                <span th:text="${factura.carrito.usuario.email}"></span><br>
+                Usuario: <span th:text="${factura.carrito.usuario.username}"></span>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <tr class="heading">
+            <td>Juego</td>
+            <td>Precio</td>
+        </tr>
+
+        <tr th:each="juego : ${factura.carrito.juegos}" class="item">
+            <td th:text="${juego.titulo}"></td>
+            <td th:text="'$' + ${juego.precio}"></td>
+        </tr>
+
+        <tr class="total">
+            <td></td>
+            <td>Total:</td>
+            <td th:text="'$' + ${factura.total}"></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
