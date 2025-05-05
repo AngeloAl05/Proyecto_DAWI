@@ -32,11 +32,6 @@ public class JuegoServiceImpl implements JuegoService {
     }
 
     @Override
-    public JuegoResponseDTO buscarXID(Long id) {
-        return juegoRepository.findById(id).map(juegoMapper::toDTO).orElseThrow(()-> new RuntimeException("no se encontro el id: " + id));
-    }
-
-    @Override
     public JuegoResponseDTO crear(JuegoRequestDTO dto) {
         Desarrollador desarrollador = desarrolladorRepository.findById(dto.getDesarrollador()).orElseThrow(()->new RuntimeException("No se encontro el desarrollador"));
         Set<Genero> generos = new HashSet<>(generoRepository.findAllById(dto.getGeneros()));
@@ -46,28 +41,4 @@ public class JuegoServiceImpl implements JuegoService {
         Juego nuevoJuego = juegoRepository.save(juego);
         return juegoMapper.toDTO(nuevoJuego);
     }
-
-    @Override
-    public JuegoResponseDTO editarJuego(Long id_juego, JuegoRequestDTO dto) {
-        Juego juegoExistente = juegoRepository.findById(id_juego).orElseThrow(() -> new RuntimeException("Juego no encontrado"));
-        Desarrollador desarrollador = desarrolladorRepository.findById(dto.getDesarrollador()).orElseThrow(() -> new RuntimeException("Desarrollador no encontrado"));
-        Set<Genero> generos = new HashSet<>(generoRepository.findAllById(dto.getGeneros()));
-        if (generos.size() != dto.getGeneros().size()) {
-            throw new RuntimeException("Uno o más géneros no existen");
-        }
-        juegoExistente.setTitulo(dto.getTitulo());
-        juegoExistente.setDescripcion(dto.getDescripcion());
-        juegoExistente.setImagen(dto.getImagen());
-        juegoExistente.setPortada(dto.getPortada());
-        juegoExistente.setTrailer(dto.getTrailer());
-        juegoExistente.setFecha_lanzamiento(dto.getFecha_lanzamiento());
-        juegoExistente.setNum_ventas(dto.getNum_ventas());
-        juegoExistente.setCalificaion(dto.getCalificaion());
-        juegoExistente.setPrecio(dto.getPrecio());
-        juegoExistente.setDesarrollador(desarrollador);
-        juegoExistente.setGeneros(generos);
-        juegoRepository.save(juegoExistente);
-        return juegoMapper.toDTO(juegoExistente);
-    }
-
 }

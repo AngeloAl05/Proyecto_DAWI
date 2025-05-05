@@ -24,13 +24,5 @@ public class JuegoController {
         return  service.crear(requestDTO);
     }
 
-    @GetMapping("/{id}")
-    public JuegoResponseDTO buscarXId(@PathVariable Long id){
-        return service.buscarXID(id);
     }
 
-    @PutMapping("/{id}")
-    public JuegoResponseDTO editarJuego(@PathVariable Long id, @RequestBody JuegoRequestDTO requestDTO){
-        return service.editarJuego(id,requestDTO);
-    }
-}
