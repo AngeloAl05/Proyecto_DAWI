@@ -29,11 +29,11 @@ insert into genero (nom_genero, imagen) values
 ('Plataformas','https://img.asmedia.epimg.net/resizer/v2/LYTNEKVPQJKVRED4JNOH6KBA2U.jpg?auth=7eaa2b3d5ed1bbf67bb7d6ea1e8bd1ee9d9833f97c3ae2772a10ef8e3c2e44e4&width=976&height=549&smart=true');
 
 INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer, id_desarrollador) VALUES
-(94, 'Kratos, un guerrero espartano, desata el poder de los dioses en busca de venganza contra Ares, enfrentándose a criaturas mitológicas y resolviendo acertijos.', '2015-10-23', 'https://i.ytimg.com/vi/oXjkfhIakG8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBotIfuVDRrHVnRr4fyO6OC4BORbg', 13723586, 'https://static.wikia.nocookie.net/wiki-doblaje-espana/images/7/7c/GOW_portada.png/revision/latest?cb=20240619213406&path-prefix=es', 49.99, 'God of War', 'jZkX3LJDeYQ', 1),
+(94, 'Kratos, un guerrero espartano, desata el poder de los dioses en busca de venganza contra Ares, enfrentándose a criaturas mitológicas y resolviendo acertijos.', '2015-10-23', 'https://i.ytimg.com/vi/oXjkfhIakG8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBotIfuVDRrHVnRr4fyO6OC4BORbg', 13723586, 'https://preview.redd.it/ab4m7negqp8c1.jpeg?auto=webp&s=d64a38c504114db1e340a1a24c2971398e845ee6', 49.99, 'God of War', 'jZkX3LJDeYQ', 1),
 
-(93, 'Kratos, nuevo dios de la guerra, es traicionado por Zeus. Con ayuda de Gaia, busca recuperar su poder y cambiar su destino enfrentando a los dioses del Olimpo.', '2019-12-23', 'https://i.ytimg.com/vi/gX-V-ICuQGU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDpLnxA7qsiV-bUK9w0_cRKWVNq0w', 14905823, 'https://static.wikia.nocookie.net/godofwar/images/e/ef/Portada_God_of_War_II.png/revision/latest?cb=20211007232506&path-prefix=es', 29.99, 'God of War II', 'oe0OmX9hINA', 1),
+(93, 'Kratos, nuevo dios de la guerra, es traicionado por Zeus. Con ayuda de Gaia, busca recuperar su poder y cambiar su destino enfrentando a los dioses del Olimpo.', '2019-12-23', 'https://i.ytimg.com/vi/gX-V-ICuQGU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDpLnxA7qsiV-bUK9w0_cRKWVNq0w', 14905823, 'https://images.cdn2.buscalibre.com/fit-in/360x360/8e/df/8edff995f378178ad96196c1871d9d01.jpg', 29.99, 'God of War II', 'oe0OmX9hINA', 1),
 
-(92, 'Kratos busca vengarse de Zeus y los dioses. Desde el Hades hasta el Monte Olimpo, lucha contra titanes y monstruos con un arsenal mejorado.', '2012-11-01', 'https://m.media-amazon.com/images/I/81LCkp8hf4L._SL1500_.jpg', 20184934, 'https://static.wikia.nocookie.net/godofwar/images/d/d8/Portada_God_of_War_III.png/revision/latest?cb=20211007233947&path-prefix=es', 39.99, 'God of War III', 'bPi7ORsTp-I', 1),
+(92, 'Kratos busca vengarse de Zeus y los dioses. Desde el Hades hasta el Monte Olimpo, lucha contra titanes y monstruos con un arsenal mejorado.', '2012-11-01', 'https://m.media-amazon.com/images/I/81LCkp8hf4L._SL1500_.jpg', 20184934, 'https://gamescenter.pe/wp-content/uploads/2024/08/God-of-War-III-PS4N.webp', 39.99, 'God of War III', 'bPi7ORsTp-I', 1),
 
 (80, 'Kratos rompe su juramento con Ares y es castigado por las Furias. Encarcelado y torturado, lucha por redimirse y vengar a su familia.', '2010-07-21', 'https://assetsio.gnwcdn.com/136273370527.jpg?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp', 6129208, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkaIX3ZWrZelRQLQnyXMQmSaG3oIWNKkDblw&s', 39.99, 'God of War: Ascension', 'VJMK8oFY1rA', 1),
 
@@ -45,7 +45,7 @@ INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_vent
 
 (92, 'Cinco años después, Ellie busca justicia tras un hecho violento. En su viaje enfrenta peligros y las consecuencias emocionales de sus acciones.', '2020-06-19', 'https://www.masgamers.com/wp-content/uploads/2024/01/the-last-of-us-4-1.jpg', 5278587, 'https://image.api.playstation.com/vulcan/img/rnd/202010/2618/w48z6bzefZPrRcJHc7L8SO66.png', 59.99, 'The Last of Us Part II', 'JdE9U9WW_HM', 2),
 
-(88, 'Nathan Drake sigue una pista sobre El Dorado. En una isla del Pacífico, enfrenta mercenarios y descubre secretos mortales mientras lucha por sobrevivir.', '2006-08-19', 'https://i.ytimg.com/vi/rZnUdJVLP_o/maxresdefault.jpg', 3638962, 'https://static.wikia.nocookie.net/unchartedpedia/images/b/bd/Uncharted_1_portada.jpeg/revision/latest?cb=20211229031812&path-prefix=es', 39.99, 'Uncharted', 'E9dqi2fmnFw', 2),
+(88, 'Nathan Drake sigue una pista sobre El Dorado. En una isla del Pacífico, enfrenta mercenarios y descubre secretos mortales mientras lucha por sobrevivir.', '2006-08-19', 'https://i.ytimg.com/vi/rZnUdJVLP_o/maxresdefault.jpg', 3638962, 'https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/uncharted-1-portada-ficha-1878033.jpg?tf=1200x', 39.99, 'Uncharted', 'E9dqi2fmnFw', 2),
 (90, 'Sam y Drake buscan el tesoro perdido del capitán Henry Avery, viajando por el mundo desde Madagascar hasta islas, ciudades remotas y picos nevados en una aventura épica.', '2016-05-10', 'https://wallpapers.com/images/hd/uncharted-4-lrc9dstxc47wztbp.jpg', 3242373, 'https://m.media-amazon.com/images/M/MV5BNTFmN2M0MGMtMTI5Ny00NzRlLWFlZGYtZDM0N2VmOTUwYTdmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg', 49.99, 'Uncharted 4', 'Zl4yNjrgtG8', 2),
 
 (84, 'Peter Parker, con ocho años como Spider-Man, domina el combate, las acrobacias y la exploración urbana, enfrentando nuevas amenazas en la versión más poderosa que se ha controlado del héroe.', '2024-12-05', 'https://static.fnac-static.com/multimedia/Images/FR/NR/de/b5/9a/10139102/1520-2/tsp20250321040248/Marvel-s-Spider-Man-PS4.jpg', 14261093, 'https://image.api.playstation.com/vulcan/ap/rnd/202011/0402/C784xeOFo2wViCf4m5bxgoeH.png', 39.99, 'Spider-Man', 'q4GdJVvdxss', 3),
@@ -53,6 +53,86 @@ INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_vent
 (84, 'Miles Morales sigue los pasos de Peter Parker como el nuevo Spider-Man. Cuando un conflicto amenaza su ciudad, descubre que con gran poder viene una gran responsabilidad y debe adoptar su propio camino.', '2024-07-30', 'https://i.ytimg.com/vi/JsNgEBb4ZD0/maxresdefault.jpg', 5656129, 'https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da845e9124659579fda9eff1bc3e', 59.99, 'Spider-Man: Miles Morales', 'oZXyrAfuHOo', 3),
 
 (98, 'Ratchet y Clank reviven su historia de origen con acción, jefes nuevos y planetas rediseñados. Esta versión modernizada ofrece jugabilidad renovada, nuevas secuencias y visuales espectaculares en PS4.', '2024-08-12', 'https://image.api.playstation.com/vulcan/img/rnd/202011/0204/g7QavKoff0uAngWn4Hiytel9.png', 2397430, 'https://upload.wikimedia.org/wikipedia/en/3/37/Ratchet_and_Clank_cover.jpg', 59.99, 'Ratchet & Clank', 'q5Mjz1RTfkU', 3);
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer,id_desarrollador) VALUES
+(93, 'Resident Evil 2 regresa reinventado con nuevas campañas para Leon y Claire, usando el motor RE Engine y con una vista en tercera persona.', '2014-09-28', 'https://store-images.s-microsoft.com/image/apps.29528.63971194712892648.2292346f-d9ca-4a4a-b979-4d2ce30b77e4.ae3fcb82-4513-42da-b58a-7fad858575b0?q=90&w=480&h=270', 24412168, 'https://image.api.playstation.com/vulcan/ap/rnd/202206/0204/uDFoGvnMTTCLVmTwjj0njGWC.png', 49.99, 'Resident Evil 2', 'AA4fRUp3Ono', 4);
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer,id_desarrollador) VALUES
+(98, 'Leon Kennedy investiga la desaparición de la hija del presidente en un misterioso pueblo europeo en Resident Evil 4.', '2016-08-12', 'https://image.api.playstation.com/vulcan/ap/rnd/202010/0501/ph4tgwDaQqHkj84fKrGjye8D.png', 24237750, 'https://image.api.playstation.com/vulcan/ap/rnd/202210/0706/EVWyZD63pahuh95eKloFaJuC.png', 59.99, 'Resident Evil 4', 'O75Ip4o1bs8', 4);
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer,id_desarrollador) VALUES
+(88, 'Dante, Nero y V enfrentan una invasión demoníaca en combates rápidos y estilizados en Devil May Cry 5.', '2015-02-10', 'https://www.psu.com/wp/wp-content/uploads/2018/06/devil-may-cry5-1024x576.jpg', 3109621, 'https://image.api.playstation.com/cdn/UP0102/CUSA13451_00/TOsvbhTLIAHH67MwfquiVxqI4UloJQGV.png?w=440', 59.99, 'Devil May Cry 5', 'CMjNBDq6lnQ', 4);
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer,id_desarrollador) VALUES
+(82, 'Street Fighter V ofrece intensos combates 1 contra 1 con un sistema de habilidades únicas y personajes clásicos y nuevos.', '2012-09-20', 'https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/310950/header.jpg?t=1705467952', 13664451, 'https://image.api.playstation.com/vulcan/img/cfn/11307MTvkumhOsLQiA_3g0ZbFhLnHOOWVw3qR4Rum7sKAh8I3THtbG0aa-P7dF7-miXzo1ceqN897MfxYZ7Qx-GaEZs8kq4X.png', 39.99, 'Street Fighter V', '0nFd7Iylj5A', 4);
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer,id_desarrollador) VALUES
+(98, 'Dark Souls lleva al jugador al oscuro mundo de Lordran, donde enfrentará enemigos implacables y desafíos brutales.', '2009-06-30', 'https://static.bandainamcoent.eu/high/dark-souls/dark-souls-hd/00-page-setup/ds-hd_game-thumbnail.jpg', 4387865, 'https://m.media-amazon.com/images/M/MV5BMjgzYmY1NTAtMWZiNC00YzJjLWFlZDItZDJiZWFiYzhmNWM2XkEyXkFqcGc@._V1_.jpg', 39.99, 'Dark Souls', 'o1780AqAa20', 5);
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer,id_desarrollador) VALUES
+(98, 'Dark Souls II se desarrolla en Drangleic, con combates exigentes y una historia oscura, continuando la experiencia Souls.', '2011-09-22', 'https://p325k7wa.twic.pics/high/dark-souls/dark-souls-2/00-page-setup/ds2_game-thumbnail.jpg?twic=v1/resize=760/step=10/quality=80', 21915211, 'https://blizzstoreperu.com/cdn/shop/products/DarkSoulsIIScholar.jpg?v=1596779190', 49.99, 'Dark Souls II', 'U6uyuIQYlfY', 5);
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer,id_desarrollador) VALUES
+(95, 'Dark Souls III cierra la trilogía en el reino de Lothric, con combates intensos y un diseño refinado.', '2010-08-18', 'https://gaming-cdn.com/images/products/2060/orig/dark-souls-3-deluxe-edition-deluxe-edition-pc-juego-steam-cover.jpg?v=1703156659', 11939217, 'https://image.api.playstation.com/gs2-sec/appkgo/prod/CUSA03388_00/2/i_8a484acb52ead7a8d8ca88b96dbecc0ea3180b8843ede2b22a343a4925f1432f/i/icon0.png', 29.99, 'Dark Souls III', 'cWBwFhUv1-8', 5);
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer,id_desarrollador) VALUES
+(88, 'Elden Ring mezcla el estilo Souls con un mundo abierto extenso y lore creado junto a George R. R. Martin.', '2021-11-29', 'https://hips.hearstapps.com/hmg-prod/images/elden-ring-1645743330.jpg?crop=0.888888888888889xw:1xh;center,top&resize=1200:*', 9044660, 'https://upload.wikimedia.org/wikipedia/pt/thumb/0/0d/Elden_Ring_capa.jpg/330px-Elden_Ring_capa.jpg', 59.99, 'Elden Ring', 'CptaXqVY6-E', 5);
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer,id_desarrollador) VALUES
+(80, 'GTA V narra la vida de tres criminales en Los Santos, combinando acción, mundo abierto y un exitoso modo en línea.', '2017-09-19', 'https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2021/05/gta-v-arte-grande-2321051.jpg?tf=3840x', 12451346, 'https://blizzstoreperu.com/cdn/shop/products/image-5_6d88fcbb-7494-4b5d-95e2-a7bcd0853943.jpg?v=1601749848', 49.99, 'GTA V', 'QkkoHAzjnUs', 6);
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer,id_desarrollador) VALUES
+(88, 'GTA IV sigue a Niko Bellic en su lucha por escapar de su pasado en una Liberty City moderna, con narrativa realista y físicas avanzadas.', '2016-12-07', 'https://images.ctfassets.net/wn7ipiv9ue5v/573sV0kiTALMbBfR1vDfTm/fcd4104d2500ccf296c2c7ad1782ebce/GTAIV_Hero_Character_1920x1080.jpg', 13921908, 'https://blizzstoreperu.com/cdn/shop/files/GRANDTHEFTAUTOIVINCLUYETHELOSTANDDAMNEDYTHEBALLADOFGYTONY_00069fd3-4fa4-4111-9e15-48b31fc5330f.png?v=1716391764', 29.99, 'GTA IV', 'M80K51DosFo', 6);
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer,id_desarrollador) VALUES
+(83, 'Red Dead Redemption 2 cuenta la historia de Arthur Morgan en el ocaso del Viejo Oeste, destacando por su mundo inmersivo y narrativa profunda.', '2010-05-16', 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/capsule_616x353.jpg?t=1720558643', 2416886, 'https://image.api.playstation.com/gs2-sec/appkgo/prod/CUSA08519_00/12/i_3da1cf7c41dc7652f9b639e1680d96436773658668c7dc3930c441291095713b/i/icon0.png', 29.99, 'Red Dead Redemption 2', 'gmA6MrX81z4', 6);
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer,id_desarrollador) VALUES
+(84, 'Max Payne 3 sigue al exdetective en São Paulo con acción intensa, bullet time y una narrativa oscura.', '2007-02-01', 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/204100/ss_84fc2ba217ce04ec4b782f9f5ccc09d20980f220.1920x1080.jpg?t=1718391374', 14041192, 'https://img-cdn.heureka.group/v1/35ec866a-a5b1-4b6b-8e9e-b745114af343.jpg', 29.99, 'Max Payne 3', '4Uc_dbG7MR8', 6);
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer,id_desarrollador) VALUES
+(84, 'FIFA 22 ofrece simulación realista de fútbol con tecnología Hypermotion y modos clásicos como Carrera y Ultimate Team.', '2010-03-05', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTIIdz_xiUQXWqZaiW1NLidKO406Rz3NxHKw&s', 9155633, 'https://s13emagst.akamaized.net/products/45412/45411162/images/res_adb404388d82435cf1d637118f930097.png', 49.99, 'FIFA 22', 'wC-AGjMoRa4', 7);
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer,id_desarrollador) VALUES
+(84, 'The Sims 4 permite crear y controlar Sims con herramientas intuitivas, emociones y expansión constante.', '2009-07-12', 'https://image.api.playstation.com/vulcan/img/rnd/202111/3019/AvBfRzsffW4V0ZMmclPSBrfg.png', 15046624, 'https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2015/06/03/the-sims-4-1-divulgacao.jpg', 39.99, 'The Sims 4', 'DyNv44QR14g', 7);
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer,id_desarrollador) VALUES
+(86, 'Battlefield V se ambienta en la Segunda Guerra Mundial, con campañas, multijugador y destrucción táctica.', '2013-09-16', 'https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1238810/header.jpg?t=1738598409', 11016703, 'https://gamescenter.pe/wp-content/uploads/2024/08/Battlefield-V-Definitive-Edition-ps5.jpg', 59.99, 'Battlefield V', 'fb1MR85XFOc', 7);
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer,id_desarrollador) VALUES
+(88, 'Final Fantasy VII Remake moderniza el clásico con combates en tiempo real, narrativa expandida y gráficos impresionantes.', '2013-06-05', 'https://gh.cdn.sewest.net/assets/ident/pulse/ff6c559f/FFVIIR_Desktop_Horizontal_1920x1080-c44ojokn4.jpg?quality=65', 14051245, 'https://image.api.playstation.com/vulcan/ap/rnd/202308/3009/da43e71791bcf4e8cd5ca28e62a5c96a9fc77ee6af15b8f6.jpg', 39.99, 'Final Fantasy VII', 'eHdaWMP7D2s', 8);
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer,id_desarrollador) VALUES
+(89, 'Final Fantasy XV sigue a Noctis y sus amigos en un viaje por el reino de Eos con combate en tiempo real y mundo abierto.', '2006-10-27', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbJWdZyv1L56hyVWXqA8qKEobcNBeQj3C29A&s', 14884008, 'https://s.pacn.ws/1/p/10n/final-fantasy-xv-royal-edition-659775.7.jpg?v=sgdzlw&width=400&crop=600,900', 29.99, 'Final Fantasy XV', 'CNM6o9um1dc', 8);
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer, id_desarrollador) VALUES
+(96, 'Dragon Quest. Desarrollado por Square Enix, este título se lanzó en 2017 para PlayStation 4, Nintendo 3DS, y más tarde para ', '2022-10-25', 'https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000021451/f43df7d34be1b2a65c5cd1d14bd7c90737de956f06f2bb0a115a0cee5689481e', 20129778, 'https://e.snmc.io/lk/l/x/ab7719af4f58975fa13b93e165482375/8867172', 29.99, 'Dragon Quest XI', 'bg0oBJ9cXYM', 8);
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer, id_desarrollador) VALUES
+(86, 'Tekken 7 es un juego de lucha cargado de acción que cierra el legendario conflicto del clan Mishima. ', '2020-06-25', 'https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2015/05/478570-tekken-7-6-claves.png?tf=3840x', 20764803, 'https://image.api.playstation.com/cdn/UP0700/CUSA05972_00/4yfeeKKfJdD5WzDQsoiM3xrcqPlpDLm7.png', 49.99, 'Tekken 7', '1V-_q3SKh5w', 9);
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer, id_desarrollador) VALUES
+(92, 'Dragon Ball FighterZ es un explosivo juego de lucha 2D que combina combates rápidos, gráficos fieles al anime y un elenco completo de personajes ', '2008-10-18', 'https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70050000007021/13e0b911e63b4532e5a9ffb2fc8c844388d95ed3c150ce1372245cc909ef2664', 10616485, 'https://image.api.playstation.com/cdn/UP0700/CUSA09072_00/2eBPISxxvTv5foYSDlqiBJfmRj5LZxv3.png', 59.99, 'Dragon Ball FighterZ', 'oBI0MU73nlc', 9);
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer, id_desarrollador) VALUES
+(96, 'Dragon Ball: Sparking! ZERO es la nueva generación de combates en 3D de Dragon Ball, sucesor espiritual de la serie Budokai Tenkaichi. Con escenarios ', '2024-10-07', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJL3yhLAyj7l8Li7-lveurC7XUhJjoh8g4c8FdQnVF9gZNhAocKxnhzLUQW4rG1mwnjmo&usqp=CAU', 5000000, 'https://image.api.playstation.com/vulcan/ap/rnd/202405/2216/aa8591c651dec154fc8a003a18c3fb90aba9ea596e5d0bf7.jpg', 69.99, 'Dragon Ball Sparking Zero', '-pypgiZ-PfI', 9);
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer, id_desarrollador) VALUES
+(97, 'Naruto Shippuden: Ultimate Ninja Storm 4 es un dinámico juego de lucha en 3D que concluye la saga de Naruto con combates épicos, gráficos fieles al anime', '2013-07-04', 'https://3rd-strike.com/wp-content/uploads/2016/02/Naruto-Shippuden-Ultimate-Ninja-Storm-4-Banner.jpg', 10476287, 'https://image.api.playstation.com/cdn/UP0700/CUSA02412_00/2pfYJIXY2aTnMUe8eSET7YaxkOcUTbfm.png', 29.99, 'Naruto Storm 4', 'uyUNEL1CsC4', 9);
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer, id_desarrollador) VALUES
+(85, 'Pac-Man World es una colorida aventura de plataformas en 3D donde Pac-Man debe rescatar a su familia secuestrada. Con niveles variados.', '2012-02-03', 'https://i0.wp.com/lavidaesunvideojuego.com/wp-content/uploads/2022/09/PAC-MAN-WORLD-Re-PAC-lavidaesunvideojuego-12.jpg?fit=3831%2C1735&ssl=1', 3443102, 'https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/11/pac-man-world-re-pac-ficha-2885511.jpg?tf=384x', 29.99, 'Pac-Man World', 'm88oPZTx7rI', 9);
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer, id_desarrollador) VALUES
+(92, 'Sonic Mania es un homenaje moderno a los clásicos de SEGA, que combina la velocidad y jugabilidad retro de Sonic the Hedgehog con nuevos', '2015-09-29', 'https://nichegamer.com/wp-content/uploads/2018/07/sonic-mania-plus-07-18-18-1.jpg', 8816008, 'https://image.api.playstation.com/cdn/UP0177/CUSA07023_00/pvfMACRlDW27Agp9HjDxL8CcmqxZL1V5.png', 49.99, 'Sonic Mania', 'VYQNnrccbj8', 10);
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer, id_desarrollador) VALUES
+(89, 'Sonic Forces combina acción en 3D y 2D, permitiéndote jugar como Sonic moderno, clásico y tu propio personaje personalizado. Enfréntate al Dr. Eggman y ', '2007-08-12', 'https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000001539/09f5c1cc17e3fbe9471a284ce3c214824ed0553e324c0e89011630194222063d', 15533973, 'https://image.api.playstation.com/cdn/EP0177/CUSA05674_00/Ar8wIMc1ALopfRpegC3FxC76sEod3gAi.png', 49.99, 'Sonic Forces', 'dprxYd_16Ck', 10);
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer, id_desarrollador) VALUES
+(85, 'Yakuza 0 es un juego de acción y drama criminal ambientado en el Japón de los años 80. Vive los inicios de Kazuma Kiryu y Goro Majima en una ante ', '2015-11-21', 'https://cdn.sega.co.uk/mhc-sega/public/content/media/images/raster/yakuza0dc-horizontal_cover_1.jpg', 23734780, 'https://image.api.playstation.com/vulcan/img/cfn/11307j1RpBNVS6sPflgbkyL6MvOtcSbhGFbeRrJlrWCanJ-QqmTYypbJSlHkO7rkPbuIpwS_RCe9pIVcRrw81QdtCks1euGj.png', 39.99, 'Yakuza 0', 'aMfpQRoWGbE', 10);
+
+INSERT INTO juego (calificaion, descripcion, fecha_lanzamiento, imagen, num_ventas, portada, precio, titulo, trailer, id_desarrollador) VALUES
+(87, 'Total War: Warhammer fusiona estrategia por turnos y épicas batallas en tiempo real dentro del universo de fantasía de Warhammer. Lidera una de las poderosas razas del Viejo Mund', '2008-07-21', 'https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1142710/capsule_616x353.jpg?t=1742922490', 13218623, 'https://blizzstoreperu.com/cdn/shop/files/warhammer40000spacemarine2peru.jpg?v=1725236015', 39.99, 'Total War: Warhammer', 'F3rXKKGsfpk', 10);
 
 INSERT INTO juego_generos (id_juego, id_genero) VALUES (1, 1), (1, 2);
 
@@ -79,3 +159,134 @@ INSERT INTO juego_generos (id_juego, id_genero) VALUES (11, 1), (11, 2);
 INSERT INTO juego_generos (id_juego, id_genero) VALUES (12, 1), (12, 2);
 
 INSERT INTO juego_generos (id_juego, id_genero) VALUES (13, 1), (13, 2);
+
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(14, 1), -- Acción
+(14, 3); -- Aventura
+
+-- Resident Evil 4
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(15, 1), -- Acción
+(15, 3); -- Aventura
+
+-- Devil May Cry 5
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(16, 1), -- Acción
+(16, 2); -- Hack and Slash
+
+-- Street Fighter V
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(17, 1), -- Acción
+(17, 4); -- Lucha
+
+-- Dark Souls
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(18, 1), -- Acción
+(18, 5); -- Rol (RPG)
+
+-- Dark Souls II
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(19, 1), -- Acción
+(19, 5); -- Rol (RPG)
+
+-- Dark Souls III
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(20, 1), -- Acción
+(20, 5); -- Rol (RPG)
+
+-- Elden Ring
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(21, 1), -- Acción
+(21, 5); -- Rol (RPG)
+
+-- GTA V
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(22, 1), -- Acción
+(22, 6); -- Simulación
+
+-- GTA IV
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(23, 1), -- Acción
+(23, 6); -- Simulación
+
+-- Red Dead Redemption 2
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(24, 1), -- Acción
+(24, 6); -- Simulación
+
+-- Max Payne 3
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(25, 1), -- Acción
+(25, 4); -- Shooter
+
+-- FIFA 22
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(26, 6); -- Simulación
+
+-- The Sims 4
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(27, 7); -- Simulación
+
+-- Battlefield V
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(28, 1), -- Acción
+(28, 6); -- Simulación
+
+-- Final Fantasy VII Remake
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(29, 1), -- Acción
+(29, 5); -- Rol (RPG)
+-- Final Fantasy XV
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(30, 1), -- Acción
+(30, 5); -- Rol (RPG)
+
+-- Dragon Quest XI
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(31, 1), -- Acción
+(31, 5); -- Rol (RPG)
+
+-- Tekken 7
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(32, 1), -- Acción
+(32, 4); -- Lucha
+
+-- Dragon Ball FighterZ
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(33, 1), -- Acción
+(33, 4); -- Lucha
+
+-- Dragon Ball Sparking Zero
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(34, 1), -- Acción
+(34, 4); -- Lucha
+
+-- Naruto Storm 4
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(35, 1), -- Acción
+(35, 4); -- Lucha
+
+-- Pac-Man World
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(36, 1), -- Acción
+(36, 7); -- Simulación
+
+-- Sonic Mania
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(37, 1), -- Acción
+(37, 9); -- Plataformas
+
+-- Sonic Forces
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(38, 1), -- Acción
+(38, 9); -- Plataformas
+
+-- Yakuza 0
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(39, 1), -- Acción
+(39, 5); -- Rol (RPG)
+
+-- Total War: Warhammer
+INSERT INTO juego_generos (id_juego, id_genero) VALUES
+(40, 1), -- Acción
+(40, 6); -- Simulación
