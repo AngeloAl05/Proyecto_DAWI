@@ -11,5 +11,25 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+@RestController
+@RequestMapping("/api/generos")
+@RequiredArgsConstructor
+public class GeneroController {
+    private final GeneroService service;
 
+    @GetMapping
+    public List<GeneroResponseDTO> listar(){
+        return service.listar();
+    }
+
+    @PostMapping
+    public GeneroResponseDTO crear(@RequestBody GeneroRequestDTO requestDTO){
+        return  service.crear(requestDTO);
+    }
+
+    @GetMapping("/{id}")
+    public GeneroJuegosResponseDTO buscarXID(@PathVariable Long id){
+        return service.buscarXID(id);
+    }
+}
 
