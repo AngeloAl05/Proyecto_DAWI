@@ -10,6 +10,5 @@ import java.util.List;
 
 public interface GeneroRepository extends JpaRepository<Genero,Long> {
 
-    @Query("SELECT j FROM Juego j JOIN j.generos g WHERE g.id_genero = :idGenero")
-    List<Juego> findByGeneroId(@Param("idGenero") Long idGenero);
+
 }
