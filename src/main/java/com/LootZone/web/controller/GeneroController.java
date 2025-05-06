@@ -29,7 +29,7 @@ public class GeneroController {
     }
 
     @GetMapping("/{id}")
-    public GeneroJuegosResponseDTO buscarXId(@PathVariable Long id){
+    public GeneroJuegosResponseDTO buscarXID(@PathVariable Long id){
         return service.buscarXID(id);
     }
 }
